@@ -1,0 +1,15 @@
+/* Initial state of the expandable content */
+.slide-out {
+    max-height: 0;
+    opacity: 0;
+    transform: translateX(-20px); /* Start from left */
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Expanded state of the expandable content */
+.slide-in {
+    max-height: 1000px; /* Ensure it is enough to show the content */
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}

@@ -1,0 +1,25 @@
+/* Hide default Slick slider dots completely */
+.slick-dots {
+  display: none; /* Force hide default dots */
+}
+
+/* Custom style for the new dots */
+.custom-dot {
+  width: 20px; /* Width of the rectangle */
+  height: 10px; /* Height of the rectangle */
+  background-color: #bbb; /* Default color of the rectangle */
+  
+  margin: 0 4px; /* Space between dots */
+  display: inline-block; /* Ensure proper alignment */
+  position: relative; /* Ensure it's positioned correctly */
+}
+
+/* Ensure the custom dots are displayed */
+.slick-dots li {
+  position: relative; /* Position relative to ensure custom-dot is aligned */
+}
+
+/* Style the active dot */
+.slick-dots .slick-active .custom-dot {
+  background-color: #F7941E; /* Golden color for the active dot */
+}
